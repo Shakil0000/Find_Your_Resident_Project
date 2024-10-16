@@ -1,0 +1,67 @@
+.temp{
+    background-color: black;
+}
+.box{
+    margin: auto;
+    width: 70%;
+    height: auto;
+    background-color: red;
+    border: 3px solid green;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.boxLocationIndicate{
+    margin: auto;
+    width: 70%;
+    height: 80px;
+    background-color: red;
+    border: 3px solid green;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Downloaded CSS */
+
+.container ul li {
+    width: 200px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 1.5em;
+    cursor: pointer;
+    padding: 1em;
+    background: rgb(43, 43, 43);
+    position: relative;
+    color: white;
+    border-radius: 5px;
+}
+.container ul li::before,
+.container ul li::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+    width: 105%;
+    transition: all 0.4s;
+}
+.container ul li::before {
+    left: 0%;
+    height: 130%;
+    background: linear-gradient(to right, #021B79, #0575E6);
+}
+.container ul li::after {
+    left: -10%;
+    height: 120%;
+    background: #ffffff56;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+.container ul li:hover {
+    transform: translateX(-2.5%);
+    background-color: #0575E6;
+}
+ 
+/* Downloaded CSS */
